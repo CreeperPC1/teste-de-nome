@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family:
+    "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans",
+    Arial, sans-serif;
+}
+
+body {
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  background-color: whitesmoke;
+}
+
+h1 {
+  color: #000000;
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 25px;
+}
+#formNome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 280px;
+  margin: 0 auto;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  text-align: center;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px; /* Espaço entre o input e o botão */
+  background-color: #000000; /* Combinando com a cor do seu H1 */
+  color: whitesmoke; /* Combinando com o fundo */
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#container-coracao {
+  padding: 35px 25px;
+  border-radius: 16px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  max-width: 320px;
+  text-align: center;
+}
+
+#coracao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 45px;
+  margin-bottom: 10px;
+  animation: pulsar 1.2s infinite ease-in-out; /* Faz o coração bater na tela */
+}
+
+#texto-surpresa p {
+  color: #333333;
+  font-size: 16px;
+  line-height: 1.6;
+  padding-right: 10px;
+  margin-bottom: 20px; /* Espaço perfeito entre os parágrafos */
+  text-align: justify; /* Deixa o texto alinhado à esquerda para facilitar a leitura */
+  hyphens: auto;
+}
+
+/* Remove o espaço do último parágrafo para não quebrar o visual */
+#texto-surpresa p:last-child {
+  margin-bottom: 0;
+}
+
+/* Animação que faz o coração pulsar */
+@keyframes pulsar {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
