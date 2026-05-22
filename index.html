@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Verificador de Nomes</title>
+    <script src="teste1.js"></script>
+    <link rel="stylesheet" href="teste1.css" />
+  </head>
+  <body>
+    <h1>Digite seu <br />Nome</h1>
+    <form
+      id="formNome"
+      onsubmit="
+        event.preventDefault();
+        guardarNome();
+      "
+    >
+      <input
+        type="text"
+        name="seuNome"
+        id="seuNome"
+        placeholder="Digite aqui..."
+      />
+      <button type="button" onclick="guardarNome()">Enviar</button>
+    </form>
+  </body>
+</html>
